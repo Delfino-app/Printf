@@ -1,0 +1,11 @@
+
+
+Options All -indexes
+
+RewriteEngine on 
+
+RewriteRule ^(\w+)$ index.php?pg=$1
+
+
+
+

@@ -1,0 +1,1812 @@
+@charset "utf-8";
+body{
+	
+	
+	min-height: 100vh;
+	background-color:rgba(153, 153, 153, 0.2);
+}
+
+.logo{
+
+	font-weight: 300;
+	padding-left: 10px;  /* Definições da minha nave (Menu) */
+}
+
+h3{
+     
+	font-weight: 300;
+}
+#service{
+
+	font-weight: 300;
+	
+}
+h5{
+	font-weight: 300;
+	padding-left: 10px;
+}
+p{
+	font-weight: 320;
+	padding-left: 10px;
+	text-align: justify;
+	text-indent: 0px;
+}
+.waves-effect{
+	font-weight: 300;      /* Definições dos botões */
+	text-align: center;
+}
+.parallax-container {
+      height: 400px; /* Tamanho da imagem do parallax*/
+}
+
+/* Rodapé*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+/*
+Efeito preloader---n esta a funcionar o navegador firefox*/
+
+body.pace-running .efeito{
+
+	opacity:0;
+
+}
+body.pace-done .efeito{
+	opacity:1;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+a{
+    font-weight: 400;
+	padding-left: 10px;		
+}
+#loginbtn{
+    font-weight: 500;
+	
+}
+#Colabore{
+	margin-left: 10px;
+}
+
+/*Costomizando o menu mobile*/
+
+
+.side-nav a{
+
+	color: #ffffff;
+	font-weight: 400;
+	padding-left: 10px;	
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 92%;
+  }
+}
+/*============== Fontes =================*/
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/fontes/opensans-bold-webfont.eot');
+    src: url('../fonts/fontes/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontes/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/fontes/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/fontes/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/fontes/opensans-regular-webfont.eot');
+    src: url('../fonts/fontes/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontes/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/fontes/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/fontes/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/fontes/opensans-light-webfont-webfont.eot');
+    src: url('../fonts/fontes/opensans-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontes/opensans-light-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/fontes/opensans-light-webfont-webfont.woff') format('woff'),
+         url('../fonts/fontes/opensans-light-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/fontes/opensans-light-webfont-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/fontes/opensans-semibold-webfont-webfont.eot');
+    src: url('../fonts/fontes/opensans-semibold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontes/opensans-semibold-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/fontes/opensans-semibold-webfont-webfont.woff') format('woff'),
+         url('../fonts/fontes/opensans-semibold-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/fontes/opensans-semibold-webfont-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/fontes/opensans-extrabold-webfont-webfont.eot');
+    src: url('../fonts/fontes/opensans-extrabold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontes/opensans-extrabold-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/fontes/opensans-extrabold-webfont-webfont.woff') format('woff'),
+         url('../fonts/fontes/opensans-extrabold-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/fontes/opensans-extrabold-webfont-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/*============== Menu =================*/
+    nav{
+
+        box-shadow: none;
+    }    
+    nav ul a{
+
+        color: #f1f1f1;
+    }
+    a#User{
+        
+        margin-left: 5px;
+    }
+    a#User img {
+      float: left;
+      margin-top:14px;
+      margin-right: 5px; 
+      height: 37px;
+      width: 37px;
+      border-radius: 50%;
+
+    }
+    #dropUsuario{
+        margin-left: 5px;
+    }
+    i.Menu{
+        margin-left: 5px;
+        float: right;
+    }
+    .Menu.dropdown-content{
+        margin-top:64px;
+    
+    }
+    .dropdown-content li > a{
+       font-size: 16px;
+       color: #0277bd;
+       display: block;
+       line-height: 22px;
+       padding: 14px 16px;
+    }
+    span.badge.new {
+      font-weight: normal;
+      font-size: 10pt;
+      padding-top: 4px;
+      padding-bottom: 5px;
+      padding-left: 8px;
+      padding-right: 8px;
+      color: #fff;
+      background-color: #0277bd;
+      border-radius: 2px;
+    }
+
+    /*------------Menu Mobile---------------*/
+    #userImgMenuMobile{
+       margin-top:20px;
+       margin-right: 5px; 
+       height: 70px;
+       width: 70px;
+       border-radius: 50%;
+    }
+    p#containerNameUser{
+        margin-top: -50px;
+        font-size: 13pt;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .btnLinkRapido{
+
+        border: none;
+        background-color: transparent;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .collapsible-header{
+        text-align: left;
+        font-weight: 300;
+    }
+    .collapsible-header i {
+      font-size: 10pt;
+      line-height: 3rem;
+      display: block;
+      float: right;
+    }
+    a.LinkCollapsiBody{
+
+        font-size: 10pt;
+        font-weight: 300;
+        padding-left: 30px;
+        margin-top: -10px;
+    }
+    a.MenuLinks{
+
+        text-align: left;
+        font-weight: 300;
+    }
+/*============== Login =================*/
+    /*---------Tabs----------------*/
+    .tabs{
+
+        /*background-color: transparent;*/
+    }
+    .tabs .tab a {
+       color: #455a64;
+       display: block;
+       width: 100%;
+       height: 100%;
+       text-overflow: ellipsis;
+       overflow: hidden;
+       transition: color .28s ease;
+       text-transform: none;
+    }
+    .tabs .indicator {
+       position: absolute;
+       bottom: 0;
+       height: 1px;
+       background-color:   #455a64;
+       will-change: left, right;
+    }
+    .tabs .tab a:hover {
+      color:  #0277bd;
+    }
+    #ConatinerLoginRegistro{
+
+        border-radius: 1px;
+        padding-top: 10px;
+        border :1px solid #ddd;
+    }
+
+    /*-----------Login--------*/
+    #login{
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    /*------------Registro----------*/
+    #registro{
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #loginContainer{
+
+        padding-left: 0px;
+        padding-right: 8px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    /*-----------------------*/
+        h6.loginTitulo{
+
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        h6.erro{
+
+            color: red;
+        }
+        h6.confirmar{
+            color: #0277bd;
+        }
+    /*-----------------------*/
+    #formLogin{
+
+        padding-bottom: 40px;
+    }
+
+    input[type=email]#email{
+
+        border:1px solid #d1d1d1;
+        padding-left: 5px;
+        border-radius: 5px;
+        transition: border .5s;
+    }
+    input[type=password]#pass{
+
+        border:1px solid #d1d1d1;
+        padding-left: 5px;
+        border-radius: 5px;
+        transition: border .5s;
+    }
+    input:not([type]):focus:not([readonly]),
+    input[type=email]#email:focus:not([readonly]),
+    input[type=password]#pass:focus:not([readonly]){
+        
+        box-shadow: none;
+        border:1px solid #0277bd;
+    }
+    p#EsqueceuSenhaContainer{
+      margin-top: -10px;
+      font-size: 11pt;
+      padding-top: 2px;
+      text-align: right;
+      padding-right: 0px;
+    }
+    a#esqueceuSenhaLink{
+        float: right;
+        color: #d1d1d1;
+        transition: color .5s;
+    }
+    a#esqueceuSenhaLink:hover{
+        color:#0277bd;
+        text-decoration: underline;
+    }
+    button#btnlogin{
+
+        border: none;
+        color: white;
+        background-color: #0277bd;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    #iconLogin{
+
+        padding-left: 5px;
+    }
+/*============== Notificações =================*/
+.notificacoesContainer{
+
+   padding-left: 0px;
+   padding-right: 0px;
+}
+.notificacoesLink{
+   color: #495057; 
+}
+
+.notificacaoIcon{
+
+    color: #0277bd;
+}
+
+/*============== Inicio =================*/
+.InicioConteiner{
+    margin-top: -40px;
+}
+    /*------StartAction-------*/
+    #rowStartAulaTarefaInfo{
+
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .nivelTitulo{
+
+        color: #d1d1d1;
+        font-size: 24pt;
+    }
+    .AulaTarefaInfo{
+        text-align: center;
+        font-size: 13pt;
+        font-weight: 400;
+        color: #d1d1d1;
+    }
+    #AulaTarefaInfoBtnContainer{
+        text-align: center;
+        font-size: 14pt;
+        font-weight: 400;
+    }
+    #btnStart{
+       color: #f8f8f8;
+        font-size: 10pt;
+        font-weight: normal;
+        box-shadow: none;
+        transition: color .3s;
+    }
+    #btnStart:hover{
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+        color: white;
+    }
+
+    /*------Resumo Dados User-------*/
+    #aulas{
+
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    #aulaAnteriorPrevisao{
+
+        margin-top: 120px;
+        margin-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: none;
+    }
+    #aulaSeguintePrevisao{
+
+        margin-top: 120px;
+        margin-left: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: none;
+    }
+    .aulaBloqueada{
+
+        position:absolute;
+        background-color: rgba(255,255,255,0.9);
+        width:100%;
+        top:0;
+        bottom:0;
+    }
+    .aulaBloqueadaInfoContainer{
+        position:absolute;
+        width:100%;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        color: #495057;
+        margin-top:-10px;
+        font-size: 18pt;
+    }
+    .aulaBloqueadaInfoIcon{
+        font-size: 65pt;
+    }
+    .aulaBloqueadaInfo{
+
+        font-size: 12pt;
+        padding-top: 10px;
+    }
+    .aulaBloqueadaInfoLink{
+
+       font-size: 11pt;
+       cursor: pointer;
+       color: #0277bd;
+       transition: color .3s; 
+    }
+    .aulaBloqueadaInfoLink:hover{
+
+        text-decoration:underline;
+    }
+    #btnStartAulaBloqueada{
+
+        color: #f8f8f8;
+        font-size: 10pt;
+        font-weight: normal;
+        box-shadow: none;
+        transition: color .3s;
+    }
+    .AulasContainer{
+        box-shadow:0 0 10px rgba(175,175,175,.23);
+    }
+/*============== Aulas =================*/
+
+    .collapsible#suporteOpcoesContainer{
+        box-shadow: none;
+        border: none;
+    }
+    .spanSuporteOpecoesTitulo{
+
+        border-left: 2px solid #0277bd;
+        padding-right: 10px;
+    }
+
+    #suporteAulasTitulo{
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: -1px;
+        text-align: left;
+    }
+    #suporteOpcoesContainer{
+    }
+    .btnAddSuporteAula{
+        margin-left: -2px;
+        margin-top: -8px;
+    }
+
+    .btnTerminarAula{
+
+        font-size: 10pt;
+        text-transform: none;
+        box-shadow: none;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .table-of-contents a{
+
+        font-weight:300;
+        color:#495057;
+        font-size: 10pt; 
+    }
+    .table-of-contents a.active {
+        font-weight: 500;
+        padding-left: 10px;
+        border-left: 2px solid #0277bd;
+    }
+    .table-of-contents a:hover {
+        border-left: 2px solid #0277bd;
+    }
+    .btnResolverExercicioDepois{
+
+        background-color: transparent;
+        border: 1px solid #0277bd;
+        color: #0277bd;
+        transition: background-color .3s;
+        transition: color .3s;
+    }
+    .btnResolverExercicioDepois:hover{
+
+        box-shadow: none;
+        background-color:#0277bd;
+        color:white;
+    }
+    .btnResolverExercicioAgora{
+
+        background-color: #0277bd;
+    }
+    .btnResolverExercicioAgora:hover{
+        box-shadow: none;
+    }
+
+    .opcoesRespostaExercicios{
+
+        padding-bottom: 20px;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"].with-gap:checked + label:after {
+      background-color:#0277bd;
+      z-index: 0;
+    }
+
+    .btnVerificarOpcaoExercicio{
+
+        background-color: #0277bd;
+        box-shadow: none;
+        font-size: 12pt;
+        text-transform: none;
+      
+    }
+    .btnVerificarOpcaoExercicio:hover{
+
+        background-color: #0277bd;
+        box-shadow: none;
+    }
+
+/*============== Desempenho =================*/
+#RooDesemp{
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+#classificacaoGeralContaineir{
+    padding-bottom: 10px;padding-right: 10px;padding-right: 10px;
+}
+#userDesempenhoConteiner{
+    padding-bottom: 10px;padding-right: 10px;padding-right: 10px;
+}
+#rakingUsersContainer{
+    padding-bottom: 10px;padding-right: 10px;padding-right: 10px;
+}
+    
+    /*------Classificação Geral---------*/
+
+    .ClassificacaoGeral{
+        border: 1px solid #ddd;
+    }
+    h3#ClassGeral{
+        margin-top: -1px;
+        font-size: 13pt;
+        font-weight: 300;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left:5px;
+        padding-right:5px;
+        color: white;
+    }
+    .Estrelas{
+        margin-top: 20px;
+        padding-bottom: 0px;
+        padding-right: 15px;
+    }
+    i.IconEstrelas{
+        font-size: 12pt;
+        color: #b45f06; /*Dourado*/
+    }
+    h3#Classifi{
+        font-size: 12pt;
+        font-weight: normal;
+        margin-top: -10px;
+        padding-bottom: 5px;
+        
+    }
+    /*-----Pontuacao-------*/
+    .Pontuacao{
+
+        border: 1px solid #ddd;
+        margin-top: 10px;
+    }
+    .pontosBtc{ 
+       font-size: 12pt;    
+       padding-right: 15px;
+       color: #b45f06;
+       font-weight: normal;
+       cursor: pointer;
+    }
+    /*---------Detalhes----*/
+    div.Detalhes{
+        border: 1px solid #ddd;
+        margin-top: 10px;
+    }
+    h3#DetalhesTitulo{
+        margin-top: -1px;
+        font-size: 13pt;
+        font-weight: 300;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left:5px;
+        padding-right:5px;
+        color: white;
+    }
+    p.DetalhesP{
+        text-align: left;
+        padding-bottom: 5px;    
+    }
+    span.DetalhesValores{
+        margin-left: 10px;
+        color: #d1d1d1;
+    }
+
+    /*-----------UserDesempenho---------------*/
+
+    #UserDesempenho{
+
+        border: 1px solid #ddd;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*--Informções do usuário--*/
+
+    div#UserInfo{
+
+        padding-left: 0px;padding-right: 0px;
+        padding-top: 20px;padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    div#UserImgNameContainer{
+        padding-left: 0px;
+        padding-top: 5px;
+    }
+    img#UserImg{
+        
+        /*margin-top: 20px;
+        margin-left: 5px;
+        margin-bottom: 40px; */
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+    }
+    h3#UserName_and_MediaDesempenho{
+
+        font-size: 13pt;
+        font-weight: normal;
+        margin-top: -40px;
+        padding-left: 60px;
+    }
+    span#MediaDesempenhoUser{
+        cursor: pointer;
+        font-size: 13pt;
+        font-weight: normal;
+        padding-right: 10px;
+        float: right;
+        padding-right: 0px;
+    }
+
+
+    /*---Dados estátistico--*/
+
+    div#DadosEstatistico{
+        margin-top: 5px;padding-bottom: 10px;
+        padding-left: 0px;padding-right: 0px;
+    }
+    div#EstatisticaItem{
+
+        padding-left: 0px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-size: 11pt;
+        text-align: left;
+    }
+    #EstatisticaItemModal{
+
+        font-size: 10pt;
+        font-weight: 500;
+    }
+    div#EstatisticaPercentagemConatiner{
+
+        height: 16px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 10px;
+        margin-top: 3px;
+        background-color:rgba(153, 153, 153, 0.2);
+        cursor: pointer;
+    }
+    div#EstatisticaItemPercentagem{
+
+        height: 16px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+        color: white;
+        font-size: 9pt;
+        font-weight: normal;
+        text-align: right;
+        padding-right:20px;
+        padding-left:5px;
+        border-radius: 10px;
+
+    }
+
+
+    /*---Printf Dicas--*/
+    div#PrintfDicas{
+
+        padding-left: 0px;padding-right: 0px;
+        border-top: 1px solid  #ddd;
+        border-bottom: 1px solid  #ddd;
+    }
+    .collapsible{
+        box-shadow: none;
+    }
+    .collapsible-header{
+        padding-left: 5;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .collapsible-header i {
+      font-size: 10pt;
+      line-height: 3rem;
+      display: block;
+      float: right;
+      text-align: center;
+      margin-right: 1rem;
+    }
+    .collapsible-body{
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #dicasPrintfMaster{
+
+        border-left: 2px solid #0277bd;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        font-weight: 300;
+    }
+    #Ver_Ocultar_Container{
+
+        background-color:#0277bd;
+        margin-top:7px;
+        font-size: 9pt;
+        box-shadow: none;
+        float: right;
+    }
+
+    p.DesenInfo{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        font-size: 10pt;
+        font-weight: normal;
+    }
+    
+    /*---Infomações Adicionais---*/
+    div#InfoAdd{
+
+        padding-left: 0px;padding-right: 0px;
+    } 
+    .AddInfo{
+        color: #d1d1d1;
+        text-align: left;
+        margin-left: -5px;
+        padding-bottom: 10px;
+    }
+    a#AddInfoLink{
+        color: #d1d1d1;
+        float: right;
+        margin-right: 5px;
+    }
+    a#AddInfoLink:hover{
+        color: grey;
+        text-decoration: underline;
+    }
+    i.addInfoIcon{
+        color: #37474f;
+        font-size: 14pt;
+    }
+
+    /*-----------Raking---------------*/
+
+    /*---Melhores Pontuações------*/
+    div.Raking{
+        border: 1px solid #ddd;
+    }
+    h3#RakingTitulo{
+        margin-top: -1px;
+        font-size: 14pt;
+        font-weight: 300;
+        padding-top:20px;
+        padding-left:5px;
+        padding-right:5px;
+        color: white;
+    }
+    p#RakingSubtitulo{
+        text-align: center;
+        font-size: 10pt;
+        font-weight: 400;
+        color: #d1d1d1;
+        padding-bottom: 10px;
+        margin-top: 5px;
+    }
+    ul.ListaRaking{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }  
+    ul.ListaRaking a{
+        font-size: 1rem;
+        color: #111;
+        display: block;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    span.UserRakingPontuacao{
+        float: right;
+    }
+    a#UserRaking{
+        transition: background-color .2s;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    a#UserRaking:hover{
+        background-color: #0277bd;
+        color: white;
+    }
+    a#UserRaking img {
+      float: left;
+      margin-left:-5px;
+      margin-right: 10px; 
+      margin-top: -7px;
+      height: 37px;
+      width: 37px;
+      border-radius: 50%;
+    }   
+    a#ListaRakingCompleta{
+        color: #d1d1d1;
+        text-align: center;
+        padding-top: 10px;
+    }
+    a#ListaRakingCompleta:hover{
+        color: grey;
+        text-decoration: underline;
+    }
+    i.raking{
+        margin-right: 10px;
+    }
+    i.StatisticaBaixo{
+
+        color: red; 
+    }
+    i.StatisticaMedia{
+        color: #4CAF50;
+    }
+
+    #modalRakingUserInfo{
+
+        margin-top:50px;background-color:white;
+        padding: 20px;
+    }
+
+/*============== Multimídea =================*/
+
+    /*---------Artigos------------*/
+
+    #m_artigos{
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+    .titulos{
+        border-left: 2px solid #0277bd;
+        font-size: 12pt;
+        font-weight: 400;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    /*---------Area de Anotações------------*/
+    #frmAnotacoesArtigos{
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        background-color: #f8f8f8;
+    }
+    textarea#txtNotas{
+
+        border:1px solid #d1d1d1;
+        border-radius: 3px;
+        background-color: white;
+    }
+
+    input:not([type]):focus:not([readonly]),
+    textarea#txtNotas:focus:not([readonly]){
+        
+      box-shadow: none;
+      transition: border .5s;
+      border:1px solid #0277bd;
+    }
+    #btnSalvarAnotacao{
+        
+        border: 1px solid #0277bd;
+        background-color: #0277bd;
+        border-radius: 3px;
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    /*---------Fim Area de Anotações------------*/
+
+    p#irLoja{
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 0;
+        color: #010101;
+    }
+    i#AddLojaIcon{
+
+        cursor: pointer;
+        color: #d1d1d1;
+        font-size: 16pt;
+        transition: color .5s;
+    }
+
+    i#AddLojaIcon:hover{
+        color: #0277bd;
+    }
+    .imgArtigoLista{
+        margin-top: 1px;
+        margin-left: -10px;
+        cursor: pointer;
+        width: 110px;
+        height: 120px;
+        transition: border .5s;
+        border: 1px solid #ddd;
+    }
+    .imgArtigoLista:hover{
+
+        border: 1px solid  #0277bd;
+    }
+
+    /*---------------Livros------------*/
+
+    #m_livros{
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+    .titulos{
+        border-left: 2px solid #0277bd;
+        font-size: 12pt;
+        font-weight: 400;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    /*---------Area de Anotações------------*/
+    #frmAnotacoesLivro{
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        background-color: #f8f8f8;  
+    }
+    textarea#txtNotas{
+
+        border:1px solid #d1d1d1;
+        border-radius: 3px;
+        background-color: white;
+        padding-left: 5px;
+    }
+
+    input:not([type]):focus:not([readonly]),
+    textarea#txtNotas:focus:not([readonly]){
+        
+      box-shadow: none;
+      transition: border .5s;
+      border:1px solid #0277bd;
+    }
+    #btnSalvarAnotacao{
+        
+        border: 1px solid #0277bd;
+        background-color: #0277bd;
+        border-radius: 3px;
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    /*---------Fim Area de Anotações------------*/
+
+    p#irLoja{
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 0;
+
+    }
+    i#AddLojaIcon{
+
+        cursor: pointer;
+        color: #d1d1d1;
+        font-size: 16pt;
+        transition: color .5s;
+    }
+
+    i#AddLojaIcon:hover{
+        color: #0277bd;
+    }
+    .imgLivroLista{
+        margin-top: 1px;
+        margin-left: -10px;
+        cursor: pointer;
+        width: 110px;
+        height: 120px;
+        transition: border .5s;
+        border: 1px solid #ddd;
+    }
+    .imgLivroLista:hover{
+
+        border: 1px solid  #0277bd;
+    }
+
+    /*---------------Videos------------*/
+    #m_videos{
+        margin-top: 50px;
+    }
+    #videoConteiner{
+        margin-top: 10px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-top: 0px;
+        background-color: white;
+    }
+    #videoContent{
+        background-color: black;
+        border: 2px solid #37474f;
+    }
+    /*---------Area de comentário------------*/
+    #tituloVideioPlaying{
+        font-weight: normal;
+        font-size: 11.25pt;
+        padding-right: 8px;
+        padding-left: 5px;
+        border-left: 2px solid #0277bd;
+        padding-top: 8px;
+        padding-bottom: 5px;
+        color:#495057;   
+    }
+    #frmComentarVideo{
+        margin-top: -20px;
+        padding:20px 10px;
+    }
+    input[type=text]#txtComentar{
+        border:1px solid #d1d1d1;
+        border-radius: 3px;
+    }
+    input:not([type]):focus:not([readonly]),
+    input[type=text]#txtComentar:focus:not([readonly]){
+      box-shadow: none;
+      transition: border .5s;
+      border:1px solid #0277bd;
+    }
+    #btnComentarVideo{
+        border: 1px solid #0277bd;
+        background-color:#0277bd; 
+        border-radius: 3px;
+        color: white;
+        margin-top: -10px;
+        margin-bottom: -20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100px;
+    }
+    #ComentariosContainer{
+        margin-top:10px;
+        padding-left: 5px;
+        padding-right: 10px;
+        padding-bottom: 85px;
+    }
+    #ImgUserComentario{
+      float: left;
+      margin-left:-5px;
+      height: 47px;
+      width: 47px;
+      border-radius: 50%;
+    }
+    #NomeUserComentario{
+        font-weight: normal;
+        font-size: 11pt;
+        margin-top: 14px;
+        padding-left: 0;
+        margin-left: -24px;
+    }
+    #SmsUserComentarioContainer{
+        padding-left: 22px;
+        margin-top: -20px;
+    }
+    #SmsUserComentario{
+        font-size: 10.25pt;
+        font-weight: normal;
+        border-left: 2px solid #0277bd;
+        color:#495057;
+        padding-top: 5px;
+        padding-right: 20px;
+        padding-bottom: 5px; 
+        text-align: left; 
+    }
+    #EliminarComentario{
+        color: #d1d1d1;
+        font-size: 14pt;
+        transition: color 1s;
+        cursor:pointer;
+    }
+    #EliminarComentario:hover{
+        color: #0277bd;
+    }
+
+    /*-----------PlayList Videos------------*/
+    .collapsible#ListaPlay{
+
+        box-shadow: none;
+        margin-top: -16px;
+    }
+    .collapsible-body{
+
+        padding-top: 20px;
+        padding-right: 8px;
+        padding-left: 8px;
+        padding-bottom: 5px;
+        background-color: white;    
+    }
+    .collapsible-header i {
+      font-size: 10pt;
+      line-height: 3rem;
+      display: block;
+      float: right;
+      text-align: center;
+      margin-right: 1rem;
+    }
+    #PlayList{
+        font-size: 12pt;
+        font-weight: 400;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    .info{
+        text-align: left;
+        font-weight: normal;
+        font-size: 12pt;
+    }
+    .videoTituloPlayLista{
+
+        font-size: 10pt;
+        font-weight: normal;
+        color:#495057;
+    }
+    .duracao{
+        
+      color: #d1d1d1;
+      font-size: 8pt;
+     
+      
+    }
+    .imgVideoLista{
+        margin-top: 1px;
+        cursor: pointer;
+        width: 90px;
+        height: 90px;
+        border: 1px solid #ddd;
+    }
+    .VideoImg{
+
+        float: left;
+        margin-top: 15px;
+        margin-left: -80px;
+        opacity: 0.7;
+    }
+    #ListaVideos{
+        cursor: pointer;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #irLoja{
+        
+        padding:5px 0px;
+        color:#495057; 
+    }
+    #AddLojaIcon{
+
+        cursor: pointer;
+        color: #495057;
+        font-size: 16pt;
+        font-weight:normal;
+        transition: color 1s;
+        margin-left: 5px;
+        display: block;
+    }
+    #AddLojaIcon:hover{
+        color: #0277bd;
+    }
+
+    /*-------Comprar Itens Loja---------*/
+
+    .interacaoSorry{
+
+        font-size:13pt;
+        color:#495057;
+    }
+
+
+/*============== Loja =================*/
+    
+    #L_Row{
+
+        margin-top: 50px;
+    }
+    input[type=text]#txtPesquisar{
+
+        border:1px solid #d1d1d1;
+        border-right:none;
+    }
+    input:not([type]):focus:not([readonly]),
+    input[type=text]#txtPesquisar:focus:not([readonly]){
+            
+        border-right:none;
+        box-shadow:none;
+    }
+    #btnPesquisar{
+
+        width: 45px;
+        height: 45px;
+        border:1px solid #ddd;
+        border-left: none;
+        background-color: transparent;
+        color: #ddd;
+    }
+    #btnPesquisar:hover{
+
+        transition: background-color .7s;
+        background-color: #0277bd;
+        color: white;
+    }
+    a#btnSugerirConteudo{
+
+        
+        width: 40px;
+        height: 45px;
+        padding-top: 10px;
+        border:1px solid #ddd;
+        border-left: none;
+        color: #ddd;
+        text-align: center;
+        background-color: transparent;
+        
+    }
+    a#btnSugerirConteudo:hover{
+
+        transition: background-color .7s;
+        background-color: #0277bd;
+        color: white;
+    }
+    /*-------Tabs--------*/
+    .tabs{
+
+        background-color: transparent;
+    }
+    .tabs .tab a {
+       color: #455a64;
+       display: block;
+       width: 100%;
+       height: 100%;
+       text-overflow: ellipsis;
+       overflow: hidden;
+       transition: color .28s ease;
+       text-transform: none;
+    }
+    .tabs .indicator {
+       position: absolute;
+       bottom: 0;
+       height: 1px;
+       background-color:   #455a64;
+       will-change: left, right;
+    }
+    .tabs .tab a:hover {
+      color:  #0277bd;
+    }
+    
+    /*-------Livros--------*/
+    .Livros{
+        margin-top: 10px;
+        background-color: white;    
+    }
+    
+    /*-------Artigos--------*/
+
+    .Artigo{
+        margin-top: 10px;
+        background-color: white;    
+    }
+
+    /*-------Videos--------*/
+    
+    .Videos{
+        margin-top: 10px;
+        background-color: white; 
+    }
+    /*----------------------------------------*/
+    #videoPlayIcon{
+
+        background-color: rgba(0,0,0,0.9);
+        margin-top: -1px;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 300;
+        font-size: 10pt;
+    }
+    #borderplay{
+
+        padding-top: 4px;
+        padding-left: 8px;
+        padding-right: 6px;
+        padding-bottom: 4px;
+        border: 2px solid #ddd;
+        border-radius: 50%;
+        font-size: 8pt;
+        font-weight: normal;
+    }
+    .card{
+
+        box-shadow: none;
+        border: 1px solid #ddd;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-top: 1px;
+        min-height: 270px;
+    }
+    .infoText{
+
+        text-align: center;
+        font-weight: normal;
+        padding-left: 0;
+        padding-bottom: 0px;
+        font-size: 10pt;
+
+    }
+    #preco{
+
+        text-align: center;
+        font-size: 13pt;
+        font-weight: normal;
+        cursor: pointer;
+        color: #b45f06; /*Dourado*/
+    }
+    .btnComprar{
+        border: 1px solid #4CAF50;
+        transition: background-color .5s; 
+        background-color:#fff; 
+        color: #4CAF50; 
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .btnComprar:hover{
+        background-color:#4CAF50;  
+        color: #fff; 
+    }
+
+/*============== Chat =================*/
+#displaySms{
+
+}
+#sendSms{
+    /*position: absolute;*/
+    bottom: 0;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-top: 40px;
+}
+textarea#txtSendSmsChat{
+    overflow-y: hidden;
+    padding: .8rem 0 1.6rem 0;
+    resize: none;
+    min-height: 1rem;
+}
+textarea#txtSendSmsChat{
+
+    border:1px solid #d1d1d1;
+    border-radius: 3px;
+    background-color: white;
+    padding-left: 5px;
+    margin-left: -4px;
+    margin-top: 20px;
+    bottom: 0;
+    height: 20px;
+}
+
+input:not([type]):focus:not([readonly]),
+textarea#txtSendSmsChat:focus:not([readonly]){
+    
+  box-shadow: none;
+  transition: border .5s;
+  border:1px solid #0277bd;
+
+
+}
+#btnSendSmsChat{
+    
+    border: 1px solid #0277bd;
+    background-color: #0277bd;
+    border-radius: 3px;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    /*float: right;*/
+    margin-top: -15px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+#imgChatContainer{
+
+    border: 1px solid #0277bd;
+    background-color: #0277bd;
+    border-radius: 3px;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*float: right;*/
+    margin-top: -15px;
+    cursor: pointer;
+    font-size: 10pt;
+    text-align: center;
+}
+#sendImgBtn{
+
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.smallTitle{
+
+    font-size:12pt;
+}
+#displayUserFriendsChat{
+
+    border-right: 1px solid #d1d1d1;
+    background-color:#f8f8f8;
+    padding:0px 5px;
+}
+.ShortInfoContainer{
+    padding:4px;margin-top:-45px;
+    transition: background-color .3s;
+    cursor:pointer;
+}
+.ShortInfoContainer:hover{
+
+    background:#0277bd;
+    color:white;
+}
+
+.ShortListFriendsChat{
+
+    padding:5px 5px;
+    font-size:10pt;
+    color:#333;
+}
+.frindShortListImg{
+
+    border-radius:50%;
+    width:35px;
+    height:35px;
+    margin-right:5px;
+    float:left;
+}
+.frindShotName{
+    font-size:10.25pt;
+}
+.shortSms{
+    font-size:9pt;
+}
+/*=========================================*/
+#PerfilInfoImg{
+    /*margin-top:14px;
+    margin-right: 5px; */
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+#PerfilInfoUserName{
+    font-size: 18pt;
+    font-weight: 300;
+    margin-top: -1px;
+}
+
+/*============== CMS =================*/
+.sidLink{
+
+    display:block;
+    width: 100%;
+}
+.LinkSid{
+
+    padding: 15px;
+    font-size: 12pt;
+    color: #f8f8f8;
+    width: 100%;
+    text-align: left;
+    transition: background-color .3s;
+}
+.LinkSid:hover{
+
+    background-color:#263238; 
+}
+.sidLinkIcon{
+
+    text-align: left;
+    font-size: 12pt;
+    color: #f8f8f8;
+    padding-right: 10px;
+}
+#dadosAmdminContainer{
+
+}
+#userAdminInfo{
+    color: #f8f8f8;
+}
+
+
+.title{
+
+    font-size:20pt;
+    font-weight:300;
+    text-align:left;
+    color:#495057; 
+}
+
+.miniInfoDashboard{
+
+    box-shadow:0 0 10px rgba(175,175,175,.23);
+}
+/*--------AdminAulas------------*/
+#adminAulas{
+
+    padding-bottom: 20px;
+}
+th{
+    /*color:white;*/
+    font-size: 11pt;
+    font-weight: 400;
+    text-align: left;
+    color:#495057;
+    padding-left: 20px;
+}
+td{
+    padding-left: 20px;
+    text-align: left;
+    font-size: 10pt;
+    color:#495057;
+}
+.accaoTabela{
+
+    padding:8px;
+    border-radius:3px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.accaoTabela#ver{
+
+    background-color:#006064;
+}
+.accaoTabela#editar{
+
+    background-color:#37474f;
+}
+.accaoTabela#eliminar{
+
+    background-color:#b71c1c;
+}
+.iconTabela{
+
+    /*padding-right: 5px;*/
+}
+.btnAddAulas{
+
+    font-size: 10pt;
+    text-transform: none;
+    box-shadow: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #0277bd;
+}
+.btnAddAulas:hover{
+
+    box-shadow: none;
+    background-color: #0277bd;
+}
+/*Edit Aula*/
+
+input[type=text].inputsEdit{
+    border:1px solid #d1d1d1;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+input:not([type]):focus:not([readonly]),
+input[type=text].inputsEdit:focus:not([readonly]){
+  box-shadow: none;
+  transition: border .5s;
+  border:1px solid #0277bd;
+}
+input[type=number].inputsEdit{
+    border:1px solid #d1d1d1;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+input:not([type]):focus:not([readonly]),
+input[type=number].inputsEdit:focus:not([readonly]){
+  box-shadow: none;
+  transition: border .5s;
+  border:1px solid #0277bd;
+}
+/*Display Alunos*/
+
+.userImgAlunos{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#btnNotificarAlunos{
+
+    font-size: 10pt;
+    font-weight: 400;
+    text-transform: none;
+    box-shadow: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #0277bd;
+    color: white;
+}
+
+.accaoTabelaAlunos{
+
+    padding:10px;
+    border-radius:3px;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+.accaoTabelaAlunos#detalhes{
+
+    background-color:#37474f;   
+}
+.accaoTabelaAlunos#notificar{
+
+    background-color:#0277bd;  
+}
+.accaoTabelaAlunos#enviarSms{
+
+    background-color:#006064;
+}
+.accaoTabelaAlunos#definicoes{
+
+    background-color:#b71c1c;
+}
+.iconTabelaAlunos{
+
+    font-size: 11pt;
+    color: white;
+}
+textarea.custom{
+
+    border:1px solid #d1d1d1;
+    border-radius: 3px;
+    text-align: left;
+    padding: 5px;!important;
+}
+
+input:not([type]):focus:not([readonly]),
+textarea.custom:focus:not([readonly]){
+        
+    box-shadow: none;
+    transition: border .5s;
+    border:1px solid #0277bd;
+    background-color: white;
+    text-align: left;
+}
+
+.anotacoesLivroArtigo{
+
+    background-color: #0277bd;
+    color:#ffffff;
+    text-align:left;
+    padding-top:10px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+    font-size:10pt;
+}
+.eliminarAnotacoesLivroArtigoLink{
+
+   color:#333;
+   float:right;
+   margin-top: -18px;
+   padding:8px;
+   font-weight: normal;
+}
+
+#frmSendSmsChat{
+
+    /*margin-bottom:-55px;*/
+    margin-top:10px;
+    bottom:0;
+}
+#SendSmsChat{
+
+   
+}
